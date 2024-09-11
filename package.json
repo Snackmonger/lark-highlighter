@@ -1,0 +1,25 @@
+{
+  "name": "lark-highlighter",
+  "displayName": "lark highlighter",
+  "description": "Syntax highlighting for Lark.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lark",
+      "aliases": ["Lark", "lark"],
+      "extensions": [".lark"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lark",
+      "scopeName": "source.lark",
+      "path": "./syntaxes/lark.json"
+    }]
+  }
+}
